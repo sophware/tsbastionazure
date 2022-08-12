@@ -28,4 +28,4 @@ jobs:
       with:
         push: true
         #build-args
-        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/tsbastion:555
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/tsbastion:555
