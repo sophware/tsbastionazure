@@ -2,9 +2,7 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [ "sophware-patch-1" ]
 
 jobs:
 
@@ -30,4 +28,4 @@ jobs:
       with:
         push: true
         #build-args
-        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/pulstrat:backend
+        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/nope:backend
