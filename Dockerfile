@@ -26,7 +26,7 @@ RUN apk add openssh openssh-keygen openssl && echo root:$(openssl rand -base64 3
 RUN apk add netcat-openbsd
 RUN mkdir -p /etc/ssh
 COPY /app/sshd_config /etc/ssh/
-RUN adduser -h /home/sshuser -s /bin/sh -D sshuser && addgroup sshuser wheel
+RUN adduser -h /home/sshuser -s /bin/sh -D sshuser && adduser sshuser wheel && echo '%wheel ALL=(ALL) ALL' > /etc/sudoers.d/wheel& 
 RUN echo sshuser:$(openssl rand -base64 32) | chpasswd
 COPY /app/id_rsa.pub /home/sshuser/.ssh/authorized_keys
 COPY /app/root_rsa.pub /home/root/.ssh/authorized_keys
