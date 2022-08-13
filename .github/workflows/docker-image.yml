@@ -28,5 +28,5 @@ jobs:
       with:
         push: true
         #build-args
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/tsbastionazure:0.1.0
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/tsbastionazure:latest
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/tsbastion:0.1.0
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/tsbastion:latest
