@@ -2,7 +2,7 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "sophware-patch-1" ]
+    branches: [ "patch-2" ]
 
 jobs:
 
