@@ -3,7 +3,7 @@ Tailscale-connected container for Azure. Initially intended to act as bastion, b
 
 NOTES:
 headscale; usable as subnet router; built for use as bastion that is not dependent on routing (new routes; overlapping addressing): ssh tunnel; replace cert, can change sshuser password from azure interface, which will allow sudo?; parameters: in general, headscale, for az create, todo powershell; restart other clients to get routes
-more todo: dns rename; sudo; examples of what goes wrong (auth key); rename to tsbastion and fix refs; dev in wsl; switch; example of local ssh tunnel in cmd prompt; script to check what it's costing
+more todo: dns rename; sudo; examples of what goes wrong (auth key); dev in wsl; switch; example of local ssh tunnel in cmd prompt; script to check what it's costing
 
 autoapprovers or manually approve
 need fqdn to ssh between headscale namespaces
