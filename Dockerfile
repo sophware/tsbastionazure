@@ -30,8 +30,8 @@ COPY /app/sshd_config /etc/ssh/
 #RUN echo sshuser:$(openssl rand -base64 32) | chpasswd
 #COPY /app/id_rsa.pub /home/sshuser/.ssh/authorized_keys
 COPY /app/root_rsa.pub /home/root/.ssh/authorized_keys
-RUN chown -R sshuser:sshuser /home/sshuser/.ssh
-RUN chmod 644 /home/sshuser/.ssh/authorized_keys
+#RUN chown -R sshuser:sshuser /home/sshuser/.ssh
+#RUN chmod 644 /home/sshuser/.ssh/authorized_keys
 RUN chmod 644 /home/root/.ssh/authorized_keys
 EXPOSE 2222
 
