@@ -2,7 +2,7 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "patch-2" ]
+    branches: [ "sshtest" ]
 
 jobs:
   docker:
@@ -25,4 +25,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: sophware01/tsbastionazure:0.1.0
+          tags: sophware01/tsbastionazure:0.t.1
