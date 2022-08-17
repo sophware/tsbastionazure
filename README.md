@@ -8,3 +8,12 @@ more todo: dns rename; sudo; examples of what goes wrong (auth key); rename to t
 autoapprovers or manually approve
 need fqdn to ssh between headscale namespaces
 CREDIT: https://jaliyaudagedara.blogspot.com/2020/11/setting-up-ssh-on-custom-linux-docker.html and similar ; https://docs.microsoft.com/en-us/azure/app-service/configure-custom-container?pivots=container-linux
+
+
+ooooh. monitor for tags and add routes. create bastion vnet and have some kind of automatic peering?
+
+advantage of ssh -- can have same subnet in two vnets, tenants, etc..
+
+use lowest b instanace instead. lower cost even if on all the time. easier to stop and start. single-ip vnet?
+
+now looking at azure app service web app option
